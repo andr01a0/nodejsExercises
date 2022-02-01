@@ -18,7 +18,7 @@ console.log(alienMessage.message);
 
 const andre = {
 	name: "André",
-	age: 32
+	age: 31
 };
 
 // --------------------------------------
