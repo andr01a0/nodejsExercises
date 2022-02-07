@@ -7,9 +7,9 @@ const numberTwo = "2.30";
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
-console.log(+numberOne + +numberTwo);
+// console.log(+numberOne + +numberTwo);
 // or
-// console.log(parseFloat(numberOne) + parseFloat(numberTwo));
+console.log(parseFloat(numberOne) + parseFloat(numberTwo));
 
 // --------------------------------------
 
@@ -20,9 +20,9 @@ console.log(+numberOne + +numberTwo);
 const anotherNumberOne = "1.10";
 const anotherNumberTwo = "2.30";
 
-console.log((+numberOne + +numberTwo).toFixed(2));
+// console.log((+numberOne + +numberTwo).toFixed(2));
 // or
-// console.log((parseFloat(numberOne) + parseFloat(numberTwo)).toFixed(2));
+console.log((parseFloat(numberOne) + parseFloat(numberTwo)).toFixed(2));
 
 // --------------------------------------
 // Exercise 3 - Decimals and average
@@ -53,6 +53,8 @@ const fact = "You are learning javascript!";
 // capitalize the J in Javascript
 
 console.log(fact.slice(0,17)+fact.charAt(17).toUpperCase()+fact.slice(18));
+// or
+// console.log(fact.replace('j', 'J'));
 
 // --------------------------------------
 
