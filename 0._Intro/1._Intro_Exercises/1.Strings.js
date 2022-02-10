@@ -57,6 +57,3 @@ console.log(fact.slice(0,17)+fact.charAt(17).toUpperCase()+fact.slice(18));
 // console.log(fact.replace('j', 'J'));
 
 // --------------------------------------
-
-
-
