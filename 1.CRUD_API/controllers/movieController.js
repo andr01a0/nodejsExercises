@@ -13,9 +13,7 @@ module.exports = {
 	},
 	updateMovieByID: (req, res) => {
 		const result = movieModel.save(req.body, req.params.movieId)
-		if(result === undefined)
-			res.status(400).send()
-		res.send(result)
+		res.send(result === undefined ? 400 : result)
 	},
 	deleteMovieByID: (req, res) => {
 		movieModel.remove(req.params.movieId)
