@@ -8,7 +8,8 @@ module.exports = {
 		res.send(movieModel.getAll())
 	},
 	getMovieByID: (req, res) => {
-		res.send(movieModel.findById(req.params.movieId))
+		const movie = movieModel.findById(req.params.movieId)
+		res.send(movie === undefined ? 404 : movie)
 	},
 	updateMovieByID: (req, res) => {
 		const result = movieModel.save(req.body, req.params.movieId)
