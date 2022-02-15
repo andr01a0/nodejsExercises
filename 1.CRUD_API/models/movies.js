@@ -35,7 +35,14 @@ const save = (movie, id) => {
 	return movie
 }
 
-const remove = id => movies = movies.filter(movie => movie.id !== id)
+const remove = id => {
+	const movieIndex = movies.findIndex(movie => movie.id === id)
+	if(movieIndex !== -1) {
+		movies.splice(movieIndex, 1)
+		return true
+	}
+	return false
+}
 
 module.exports = {
 	getAll,

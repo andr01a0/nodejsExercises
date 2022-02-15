@@ -16,7 +16,7 @@ module.exports = {
 		res.send(result === undefined ? 400 : result)
 	},
 	deleteMovieByID: (req, res) => {
-		movieModel.remove(req.params.movieId)
-		res.status(204).send()
+		const deleted = movieModel.remove(req.params.movieId)
+		res.send(deleted ? 204 : 404)
 	}
 }
