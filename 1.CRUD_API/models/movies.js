@@ -15,9 +15,9 @@ let movies = [
 	},
 ]
 
-const getAll = () => movies
+const getAll = () => {return {"movies": movies}}
 
-const findById = id => movies.filter(
+const findById = id => movies.find(
 	movie => movie.id === id
 )
 
